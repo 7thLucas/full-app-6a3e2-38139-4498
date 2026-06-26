@@ -50,9 +50,10 @@ Happy Meal uses AI to generate fully personalized meal plans that adapt over tim
 - **Name**: Happy Meal
 - **Tagline**: Eat smarter, not harder
 - **Tone**: Encouraging, friendly, science-backed without being clinical
-- **Primary Color**: #16A34A (fresh green — health, vitality)
-- **Secondary Color**: #F97316 (warm orange — appetite, energy)
-- **Typography**: Nunito (headings), Inter (body)
+- **Primary Color**: #F97316 (warm orange — appetite, energy)
+- **Secondary Color**: #22C55E (fresh green — health, vitality)
+- **Background**: #FFFBF5 (soft cream)
+- **Typography**: Plus Jakarta Sans (headings), Nunito (body)
 
 ## Strategic Principles
 - **Personalization over generics** — every recommendation is tailored to the individual
