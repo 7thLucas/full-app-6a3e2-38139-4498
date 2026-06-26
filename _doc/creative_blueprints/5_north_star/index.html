@@ -1,0 +1,72 @@
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-12">
+
+    <!-- Header -->
+    <div class="mb-2">
+      <span class="text-xs font-semibold tracking-widest uppercase" style="color: {{config.brandColor.mutedForeground}}; font-family: {{config.font.textFont}}, sans-serif;">North Star Metric</span>
+      <h2 class="text-4xl font-black mt-1" style="font-family: {{config.font.headingFont}}, sans-serif; color: {{config.brandColor.foreground}};">Weekly Verified Operations</h2>
+      <p class="text-sm mt-1" style="color: {{config.brandColor.mutedForeground}}; font-family: {{config.font.textFont}}, sans-serif;">Projected impact — based on your inputs</p>
+    </div>
+
+    <!-- Operations identified -->
+    <div class="mt-4 mb-6">
+      <p class="text-xs font-semibold tracking-wide uppercase mb-3" style="color: {{config.brandColor.mutedForeground}}; font-family: {{config.font.textFont}}, sans-serif;">Verified Operations for this app</p>
+      <div class="flex flex-wrap gap-3">
+        <span class="px-4 py-2 rounded-full text-sm font-semibold" style="background: {{config.brandColor.accent}}; color: {{config.brandColor.accentForeground}}; font-family: {{config.font.textFont}}, sans-serif;">🥗 Meal plan generated & accepted</span>
+        <span class="px-4 py-2 rounded-full text-sm font-semibold" style="background: {{config.brandColor.accent}}; color: {{config.brandColor.accentForeground}}; font-family: {{config.font.textFont}}, sans-serif;">🛒 Shopping list confirmed</span>
+        <span class="px-4 py-2 rounded-full text-sm font-semibold" style="background: {{config.brandColor.accent}}; color: {{config.brandColor.accentForeground}}; font-family: {{config.font.textFont}}, sans-serif;">📊 Meal logged & nutrition recorded</span>
+      </div>
+    </div>
+
+    <div class="flex gap-5 flex-1">
+
+      <!-- WVO projection -->
+      <div class="flex-1 rounded-2xl p-6" style="background: {{config.brandColor.muted}}; border: 1px solid {{config.brandColor.border}};">
+        <p class="text-xs font-semibold tracking-wide uppercase mb-4" style="color: {{config.brandColor.mutedForeground}}; font-family: {{config.font.textFont}}, sans-serif;">Weekly Volume Formula</p>
+
+        <div class="space-y-3">
+          <div class="flex items-center justify-between p-3 rounded-xl" style="background: white; border: 1px solid {{config.brandColor.border}};">
+            <span class="text-sm" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.textFont}}, sans-serif;">Active users / week</span>
+            <span class="text-sm font-bold px-3 py-1 rounded-full text-xs" style="background: #FEF3C7; color: #92400E; font-family: {{config.font.textFont}}, sans-serif;">⚠ Assumption — adjust this: 50 users</span>
+          </div>
+          <div class="flex items-center justify-between p-3 rounded-xl" style="background: white; border: 1px solid {{config.brandColor.border}};">
+            <span class="text-sm" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.textFont}}, sans-serif;">Meals logged per user / week</span>
+            <span class="text-sm font-bold px-3 py-1 rounded-full text-xs" style="background: #FEF3C7; color: #92400E; font-family: {{config.font.textFont}}, sans-serif;">⚠ Assumption — adjust this: 7 meals</span>
+          </div>
+          <div class="flex items-center justify-between p-3 rounded-xl" style="background: white; border: 1px solid {{config.brandColor.border}};">
+            <span class="text-sm" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.textFont}}, sans-serif;">Plan generations per user / week</span>
+            <span class="text-sm font-bold px-3 py-1 rounded-full text-xs" style="background: #FEF3C7; color: #92400E; font-family: {{config.font.textFont}}, sans-serif;">⚠ Assumption — adjust this: 1 plan</span>
+          </div>
+        </div>
+
+        <div class="mt-4 p-4 rounded-xl" style="background: {{config.brandColor.primary}};">
+          <p class="text-xs mb-1" style="color: rgba(255,255,255,0.8); font-family: {{config.font.textFont}}, sans-serif;">50 users × (7 meals + 1 plan) = </p>
+          <p class="text-3xl font-black" style="color: white; font-family: {{config.font.headingFont}}, sans-serif;">400 ops / week</p>
+        </div>
+      </div>
+
+      <!-- Value & ROI -->
+      <div class="flex-1 rounded-2xl p-6 flex flex-col" style="background: linear-gradient(160deg, {{config.brandColor.primary}} 0%, #15803d 100%);">
+        <p class="text-xs font-semibold tracking-wide uppercase mb-4" style="color: rgba(255,255,255,0.75); font-family: {{config.font.textFont}}, sans-serif;">Value Derivation</p>
+
+        <div class="space-y-3 flex-1">
+          <div class="p-3 rounded-xl" style="background: rgba(255,255,255,0.15);">
+            <p class="text-xs font-semibold mb-1" style="color: rgba(255,255,255,0.8); font-family: {{config.font.textFont}}, sans-serif;">Time saved per plan generated</p>
+            <p class="text-sm" style="color: white; font-family: {{config.font.textFont}}, sans-serif;">50 plans × 45 min saved × $0.25/min = <strong>$562 / week</strong></p>
+          </div>
+          <div class="p-3 rounded-xl" style="background: rgba(255,255,255,0.15);">
+            <p class="text-xs font-semibold mb-1" style="color: rgba(255,255,255,0.8); font-family: {{config.font.textFont}}, sans-serif;">Food waste reduction</p>
+            <p class="text-sm" style="color: white; font-family: {{config.font.textFont}}, sans-serif;">50 users × $8 waste saved / week = <strong>$400 / week</strong></p>
+          </div>
+        </div>
+
+        <div class="mt-4 pt-4" style="border-top: 1px solid rgba(255,255,255,0.2);">
+          <p class="text-xs mb-1" style="color: rgba(255,255,255,0.7); font-family: {{config.font.textFont}}, sans-serif;">Total projected value</p>
+          <p class="text-4xl font-black" style="color: white; font-family: {{config.font.headingFont}}, sans-serif;">$49,400 / yr</p>
+          <p class="text-xs mt-1" style="color: rgba(255,255,255,0.6); font-family: {{config.font.textFont}}, sans-serif;">($562 + $400) × 52 weeks — adjust assumptions above to match your real user base</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
