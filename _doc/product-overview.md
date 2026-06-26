@@ -3,8 +3,11 @@
 ## Product Overview
 Happy Meal is an AI-powered meal planning platform that creates personalized meal plans tailored to each user's health goals, dietary preferences, allergies, and available ingredients. The platform makes healthy eating achievable and sustainable by removing the complexity of nutrition planning.
 
+## Use Context
+Happy Meal is a personal-use app — built for individual users managing their own nutrition, not teams or enterprise. The core interaction is one person, their goals, and an AI that knows them well enough to suggest what to eat next.
+
 ## Core Problem
-Healthy eating is hard to sustain. People struggle with deciding what to eat each week, tracking nutrition without obsessing over it, shopping efficiently without waste, and sticking to dietary plans that feel generic and disconnected from their actual lives. One-size-fits-all plans don't account for individual constraints and preferences, leading to poor adherence and wasted effort.
+Healthy eating is hard to sustain. The most common pain point: **running out of meal ideas** — not knowing what to cook that's healthy, fits dietary restrictions, and uses what's already on hand. Beyond that: tracking nutrition without obsessing over it, shopping efficiently without waste, and sticking to plans that feel generic and disconnected from actual lives. One-size-fits-all plans don't account for individual constraints and preferences, leading to poor adherence and wasted effort.
 
 ## Solution
 Happy Meal uses AI to generate fully personalized meal plans that adapt over time. The platform learns from user feedback and eating habits to continuously improve its recommendations, turning a complex weekly task into a two-minute review-and-go experience.
