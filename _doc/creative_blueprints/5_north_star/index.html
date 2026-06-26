@@ -26,22 +26,22 @@
 
         <div class="space-y-3">
           <div class="flex items-center justify-between p-3 rounded-xl" style="background: white; border: 1px solid {{config.brandColor.border}};">
-            <span class="text-sm" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.textFont}}, sans-serif;">Active users / week</span>
-            <span class="text-sm font-bold px-3 py-1 rounded-full text-xs" style="background: #FEF3C7; color: #92400E; font-family: {{config.font.textFont}}, sans-serif;">⚠ Assumption — adjust this: 50 users</span>
+            <span class="text-sm" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.textFont}}, sans-serif;">Personal user (1 person)</span>
+            <span class="text-sm font-bold px-3 py-1 rounded-full text-xs" style="background: {{config.brandColor.accent}}; color: {{config.brandColor.accentForeground}}; font-family: {{config.font.textFont}}, sans-serif;">Personal-use app</span>
           </div>
           <div class="flex items-center justify-between p-3 rounded-xl" style="background: white; border: 1px solid {{config.brandColor.border}};">
-            <span class="text-sm" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.textFont}}, sans-serif;">Meals logged per user / week</span>
-            <span class="text-sm font-bold px-3 py-1 rounded-full text-xs" style="background: #FEF3C7; color: #92400E; font-family: {{config.font.textFont}}, sans-serif;">⚠ Assumption — adjust this: 7 meals</span>
+            <span class="text-sm" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.textFont}}, sans-serif;">Meals logged per week (3/day)</span>
+            <span class="text-sm font-bold px-3 py-1 rounded-full text-xs" style="background: #FEF3C7; color: #92400E; font-family: {{config.font.textFont}}, sans-serif;">⚠ Assumption — adjust this: 21 meals</span>
           </div>
           <div class="flex items-center justify-between p-3 rounded-xl" style="background: white; border: 1px solid {{config.brandColor.border}};">
-            <span class="text-sm" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.textFont}}, sans-serif;">Plan generations per user / week</span>
+            <span class="text-sm" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.textFont}}, sans-serif;">Meal plans generated / week</span>
             <span class="text-sm font-bold px-3 py-1 rounded-full text-xs" style="background: #FEF3C7; color: #92400E; font-family: {{config.font.textFont}}, sans-serif;">⚠ Assumption — adjust this: 1 plan</span>
           </div>
         </div>
 
         <div class="mt-4 p-4 rounded-xl" style="background: {{config.brandColor.primary}};">
-          <p class="text-xs mb-1" style="color: rgba(255,255,255,0.8); font-family: {{config.font.textFont}}, sans-serif;">50 users × (7 meals + 1 plan) = </p>
-          <p class="text-3xl font-black" style="color: white; font-family: {{config.font.headingFont}}, sans-serif;">400 ops / week</p>
+          <p class="text-xs mb-1" style="color: rgba(255,255,255,0.8); font-family: {{config.font.textFont}}, sans-serif;">1 user × (21 meals logged + 1 plan) = </p>
+          <p class="text-3xl font-black" style="color: white; font-family: {{config.font.headingFont}}, sans-serif;">22 ops / week</p>
         </div>
       </div>
 
