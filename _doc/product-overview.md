@@ -1,0 +1,5 @@
+Build an AI Resume Screening platform that helps recruiters evaluate job applicants more efficiently.
+
+Recruiters can upload resumes and job descriptions. The AI compares each candidate against the job requirements, summarizes strengths and weaknesses, identifies missing skills, and recommends the most suitable candidates.
+
+The platform should organize applicants through the hiring pipeline and simplify recruitment decisions. Build an AI meal planner that helps users create personalized meal plans based on their health goals, dietary preference, allergies, and available ingredients. Uh, the AI recommend meals, generates shopping lists, track nutrition, and adjust future recommendations. Based on, um, user feedback and eating habits. And the goal is to make healthy eating easier through personalized meal planning. I'll name the app as...  Happy Meal.
