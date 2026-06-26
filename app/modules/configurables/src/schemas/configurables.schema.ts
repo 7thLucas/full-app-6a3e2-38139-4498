@@ -99,6 +99,30 @@ export const configurableSchemas: ConfigurableSchemas = {
       ],
     },
 
+    // ── Happy Meal App Content ────────────────────────────────────────────────
+    { fieldName: "appTagline",     type: "string", required: false, label: "App Tagline" },
+    { fieldName: "appDescription", type: "string", required: false, label: "App Description" },
+    { fieldName: "heroHeading",    type: "string", required: false, label: "Hero Heading" },
+    { fieldName: "heroSubheading", type: "string", required: false, label: "Hero Subheading" },
+    { fieldName: "heroCta",        type: "string", required: false, label: "Hero CTA Label" },
+    // ── Meal Plan Settings ────────────────────────────────────────────────────
+    { fieldName: "mealsPerDay",       type: "number",  required: false, label: "Meals Per Day",        min: 1, max: 6  },
+    { fieldName: "daysPerWeek",       type: "number",  required: false, label: "Days Per Week",        min: 1, max: 7  },
+    { fieldName: "enableShoppingList",type: "boolean", required: false, label: "Enable Shopping List" },
+    { fieldName: "enableNutrition",   type: "boolean", required: false, label: "Enable Nutrition Tracking" },
+    // ── Dietary Options ───────────────────────────────────────────────────────
+    {
+      fieldName: "availableDiets",
+      type: "array",
+      label: "Available Diet Types",
+      item: { type: "string", required: true },
+    },
+    {
+      fieldName: "availableGoals",
+      type: "array",
+      label: "Available Health Goals",
+      item: { type: "string", required: true },
+    },
     {
       fieldName: "font",
       type: "object",

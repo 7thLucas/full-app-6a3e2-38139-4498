@@ -64,67 +64,86 @@ export type TDefaultConfigurableData = {
   logoUrl: string;
   brandColor: TBrandColor;
   font: TFont;
-  // Mirror new schema fields here. Example:
-  //   maxItemsPerPage?: number;
-  //   enableNotifications?: boolean;
-  //   featuredCategories?: string[];
+  // Happy Meal content
+  appTagline?: string;
+  appDescription?: string;
+  heroHeading?: string;
+  heroSubheading?: string;
+  heroCta?: string;
+  // Meal plan settings
+  mealsPerDay?: number;
+  daysPerWeek?: number;
+  enableShoppingList?: boolean;
+  enableNutrition?: boolean;
+  // Dietary options
+  availableDiets?: string[];
+  availableGoals?: string[];
 };
 
 export const defaultConfigurablesData: TDefaultConfigurableData = {
-  appName: "My App",
+  appName: "Happy Meal",
   logoUrl: "",
   brandColor: {
     // Base
-    background:        "#ffffff",
-    foreground:        "#09090b",
+    background:        "#FFFBF5",
+    foreground:        "#1C1917",
     // Card
-    card:              "#ffffff",
-    cardForeground:    "#09090b",
+    card:              "#FFF7ED",
+    cardForeground:    "#1C1917",
     // Popover
-    popover:           "#ffffff",
-    popoverForeground: "#09090b",
+    popover:           "#FFFFFF",
+    popoverForeground: "#1C1917",
     // Primary
-    primary:           "#2563eb",
-    primaryForeground: "#ffffff",
+    primary:           "#F97316",
+    primaryForeground: "#FFFFFF",
     // Secondary
-    secondary:           "#f4f4f5",
-    secondaryForeground: "#18181b",
+    secondary:           "#22C55E",
+    secondaryForeground: "#FFFFFF",
     // Muted
-    muted:           "#f4f4f5",
-    mutedForeground: "#71717a",
+    muted:           "#FEF3C7",
+    mutedForeground: "#78716C",
     // Accent
-    accent:           "#f4f4f5",
-    accentForeground: "#18181b",
+    accent:           "#FED7AA",
+    accentForeground: "#9A3412",
     // Destructive
-    destructive:           "#ef4444",
-    destructiveForeground: "#fafafa",
+    destructive:           "#EF4444",
+    destructiveForeground: "#FFFFFF",
     // Border / Input / Ring
-    border: "#e4e4e7",
-    input:  "#e4e4e7",
-    ring:   "#2563eb",
+    border: "#FDE68A",
+    input:  "#FEF3C7",
+    ring:   "#F97316",
     // Charts
-    chart1: "#f97316",
-    chart2: "#0d9488",
-    chart3: "#1e3a5f",
-    chart4: "#d4a017",
-    chart5: "#ea580c",
+    chart1: "#F97316",
+    chart2: "#22C55E",
+    chart3: "#EAB308",
+    chart4: "#EC4899",
+    chart5: "#8B5CF6",
     // Navbar
-    navbarBackground: "#ffffff",
+    navbarBackground: "#FFF7ED",
     // Sidebar
-    sidebarBackground:        "#fafafa",
-    sidebarForeground:        "#3f3f46",
-    sidebarPrimary:           "#2563eb",
-    sidebarPrimaryForeground: "#ffffff",
-    sidebarAccent:            "#f4f4f5",
-    sidebarAccentForeground:  "#18181b",
-    sidebarBorder:            "#e4e4e7",
-    sidebarRing:              "#2563eb",
+    sidebarBackground:        "#FFF7ED",
+    sidebarForeground:        "#1C1917",
+    sidebarPrimary:           "#F97316",
+    sidebarPrimaryForeground: "#FFFFFF",
+    sidebarAccent:            "#FED7AA",
+    sidebarAccentForeground:  "#9A3412",
+    sidebarBorder:            "#FDE68A",
+    sidebarRing:              "#F97316",
   },
   font: {
     headingFont: "Plus Jakarta Sans",
-    textFont: "Inter",
+    textFont: "Nunito",
   },
-  // ─────────────────────────────────────────────────────────────────────
-  // Add new field defaults here. See RULES.md §5 for per-type shape.
-  // ─────────────────────────────────────────────────────────────────────
+  // ── Happy Meal defaults ───────────────────────────────────────────────
+  appTagline: "Your personal AI meal planner",
+  appDescription: "Stop stressing about what to eat. Happy Meal suggests personalized meals based on your goals, preferences, and what's in your kitchen.",
+  heroHeading: "What's for dinner tonight?",
+  heroSubheading: "Let AI do the thinking. You do the eating.",
+  heroCta: "Generate My Meal Plan",
+  mealsPerDay: 3,
+  daysPerWeek: 7,
+  enableShoppingList: true,
+  enableNutrition: true,
+  availableDiets: ["No Restriction", "Vegetarian", "Vegan", "Pescatarian", "Keto", "Paleo", "Gluten-Free", "Dairy-Free", "Halal", "Kosher"],
+  availableGoals: ["Eat Healthier", "Lose Weight", "Build Muscle", "Maintain Weight", "Increase Energy", "Reduce Stress", "Improve Digestion"],
 };

@@ -1,0 +1,8 @@
+[
+  {
+    "name": "agentic",
+    "type": "scaffold",
+    "status": "failed",
+    "error_msg": "project package.json not found at /tmp/qb-workspaces/gnrp1d2c-4498/app/modules/agentic/package.json"
+  }
+]
