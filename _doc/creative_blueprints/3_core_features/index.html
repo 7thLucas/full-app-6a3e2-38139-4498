@@ -1,0 +1,63 @@
+<style>
+  .mode-landscape .sl-grid { grid-template-columns: repeat(3, 1fr); }
+  .mode-portrait .sl-grid { grid-template-columns: repeat(2, 1fr); }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-12">
+
+    <!-- Header -->
+    <div class="mb-6">
+      <span class="text-xs font-semibold tracking-widest uppercase" style="color: {{config.brandColor.mutedForeground}}; font-family: {{config.font.textFont}}, sans-serif;">What {{config.appName}} Does</span>
+      <h2 class="text-4xl font-black mt-1" style="font-family: {{config.font.headingFont}}, sans-serif; color: {{config.brandColor.foreground}};">Six features. One system.</h2>
+    </div>
+
+    <!-- Persona chip -->
+    <div class="flex gap-2 mb-6">
+      <span class="px-4 py-1.5 rounded-full text-sm font-semibold" style="background: {{config.brandColor.primary}}; color: white; font-family: {{config.font.textFont}}, sans-serif;">🏃 Health-Conscious User</span>
+      <span class="px-4 py-1.5 rounded-full text-sm font-medium" style="background: {{config.brandColor.muted}}; color: {{config.brandColor.mutedForeground}}; font-family: {{config.font.textFont}}, sans-serif;">🧘 Dietary Restricted</span>
+      <span class="px-4 py-1.5 rounded-full text-sm font-medium" style="background: {{config.brandColor.muted}}; color: {{config.brandColor.mutedForeground}}; font-family: {{config.font.textFont}}, sans-serif;">💼 Busy Professional</span>
+    </div>
+
+    <!-- Feature grid -->
+    <div class="sl-grid grid gap-4 flex-1">
+
+      <div class="rounded-2xl p-6 flex flex-col gap-3" style="background: {{config.brandColor.accent}}; border: 1px solid {{config.brandColor.border}};">
+        <span class="text-2xl">🥗</span>
+        <h3 class="font-bold text-base" style="font-family: {{config.font.headingFont}}, sans-serif; color: {{config.brandColor.accentForeground}};">{{config.features[0].title}}</h3>
+        <p class="text-xs leading-relaxed" style="color: {{config.brandColor.accentForeground}}; opacity: 0.8; font-family: {{config.font.textFont}}, sans-serif;">{{config.features[0].description}}</p>
+      </div>
+
+      <div class="rounded-2xl p-6 flex flex-col gap-3" style="background: {{config.brandColor.muted}}; border: 1px solid {{config.brandColor.border}};">
+        <span class="text-2xl">🤖</span>
+        <h3 class="font-bold text-base" style="font-family: {{config.font.headingFont}}, sans-serif; color: {{config.brandColor.foreground}};">{{config.features[1].title}}</h3>
+        <p class="text-xs leading-relaxed" style="color: {{config.brandColor.mutedForeground}}; font-family: {{config.font.textFont}}, sans-serif;">{{config.features[1].description}}</p>
+      </div>
+
+      <div class="rounded-2xl p-6 flex flex-col gap-3" style="background: {{config.brandColor.muted}}; border: 1px solid {{config.brandColor.border}};">
+        <span class="text-2xl">🛒</span>
+        <h3 class="font-bold text-base" style="font-family: {{config.font.headingFont}}, sans-serif; color: {{config.brandColor.foreground}};">{{config.features[2].title}}</h3>
+        <p class="text-xs leading-relaxed" style="color: {{config.brandColor.mutedForeground}}; font-family: {{config.font.textFont}}, sans-serif;">{{config.features[2].description}}</p>
+      </div>
+
+      <div class="rounded-2xl p-6 flex flex-col gap-3" style="background: {{config.brandColor.muted}}; border: 1px solid {{config.brandColor.border}};">
+        <span class="text-2xl">📊</span>
+        <h3 class="font-bold text-base" style="font-family: {{config.font.headingFont}}, sans-serif; color: {{config.brandColor.foreground}};">{{config.features[3].title}}</h3>
+        <p class="text-xs leading-relaxed" style="color: {{config.brandColor.mutedForeground}}; font-family: {{config.font.textFont}}, sans-serif;">{{config.features[3].description}}</p>
+      </div>
+
+      <div class="rounded-2xl p-6 flex flex-col gap-3" style="background: {{config.brandColor.muted}}; border: 1px solid {{config.brandColor.border}};">
+        <span class="text-2xl">🔄</span>
+        <h3 class="font-bold text-base" style="font-family: {{config.font.headingFont}}, sans-serif; color: {{config.brandColor.foreground}};">{{config.features[4].title}}</h3>
+        <p class="text-xs leading-relaxed" style="color: {{config.brandColor.mutedForeground}}; font-family: {{config.font.textFont}}, sans-serif;">{{config.features[4].description}}</p>
+      </div>
+
+      <div class="rounded-2xl p-6 flex flex-col gap-3" style="background: {{config.brandColor.muted}}; border: 1px solid {{config.brandColor.border}};">
+        <span class="text-2xl">🚫</span>
+        <h3 class="font-bold text-base" style="font-family: {{config.font.headingFont}}, sans-serif; color: {{config.brandColor.foreground}};">{{config.features[5].title}}</h3>
+        <p class="text-xs leading-relaxed" style="color: {{config.brandColor.mutedForeground}}; font-family: {{config.font.textFont}}, sans-serif;">{{config.features[5].description}}</p>
+      </div>
+
+    </div>
+  </div>
+</section>
