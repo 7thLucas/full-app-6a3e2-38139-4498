@@ -1,0 +1,62 @@
+<style>
+  .mode-landscape .sl-metrics { grid-template-columns: repeat(2, 1fr); }
+  .mode-portrait .sl-metrics { grid-template-columns: repeat(2, 1fr); }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-12">
+
+    <!-- Header -->
+    <div class="mb-8">
+      <span class="text-xs font-semibold tracking-widest uppercase" style="color: {{config.brandColor.mutedForeground}}; font-family: {{config.font.textFont}}, sans-serif;">Measurable Impact</span>
+      <h2 class="text-4xl font-black mt-1" style="font-family: {{config.font.headingFont}}, sans-serif; color: {{config.brandColor.foreground}};">What changes when you use {{config.appName}}</h2>
+    </div>
+
+    <div class="flex gap-6 flex-1">
+
+      <!-- Metric cards -->
+      <div class="sl-metrics grid gap-4 flex-1 content-start">
+
+        <div class="rounded-2xl p-6" style="background: {{config.brandColor.muted}}; border: 1px solid {{config.brandColor.border}};">
+          <p class="text-4xl font-black mb-1" style="color: {{config.brandColor.primary}}; font-family: {{config.font.headingFont}}, sans-serif;">{{config.benefits[0].stat}}</p>
+          <p class="font-semibold text-sm mb-1" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.headingFont}}, sans-serif;">{{config.benefits[0].label}}</p>
+          <p class="text-xs" style="color: {{config.brandColor.mutedForeground}}; font-family: {{config.font.textFont}}, sans-serif;">{{config.benefits[0].detail}}</p>
+        </div>
+
+        <div class="rounded-2xl p-6" style="background: {{config.brandColor.muted}}; border: 1px solid {{config.brandColor.border}};">
+          <p class="text-4xl font-black mb-1" style="color: {{config.brandColor.primary}}; font-family: {{config.font.headingFont}}, sans-serif;">{{config.benefits[1].stat}}</p>
+          <p class="font-semibold text-sm mb-1" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.headingFont}}, sans-serif;">{{config.benefits[1].label}}</p>
+          <p class="text-xs" style="color: {{config.brandColor.mutedForeground}}; font-family: {{config.font.textFont}}, sans-serif;">{{config.benefits[1].detail}}</p>
+        </div>
+
+        <div class="rounded-2xl p-6" style="background: {{config.brandColor.muted}}; border: 1px solid {{config.brandColor.border}};">
+          <p class="text-4xl font-black mb-1" style="color: {{config.brandColor.secondary}}; font-family: {{config.font.headingFont}}, sans-serif;">{{config.benefits[2].stat}}</p>
+          <p class="font-semibold text-sm mb-1" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.headingFont}}, sans-serif;">{{config.benefits[2].label}}</p>
+          <p class="text-xs" style="color: {{config.brandColor.mutedForeground}}; font-family: {{config.font.textFont}}, sans-serif;">{{config.benefits[2].detail}}</p>
+        </div>
+
+        <div class="rounded-2xl p-6" style="background: {{config.brandColor.muted}}; border: 1px solid {{config.brandColor.border}};">
+          <p class="text-4xl font-black mb-1" style="color: {{config.brandColor.secondary}}; font-family: {{config.font.headingFont}}, sans-serif;">{{config.benefits[3].stat}}</p>
+          <p class="font-semibold text-sm mb-1" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.headingFont}}, sans-serif;">{{config.benefits[3].label}}</p>
+          <p class="text-xs" style="color: {{config.brandColor.mutedForeground}}; font-family: {{config.font.textFont}}, sans-serif;">{{config.benefits[3].detail}}</p>
+        </div>
+
+      </div>
+
+      <!-- ROI summary block -->
+      <div class="w-64 flex-shrink-0 rounded-2xl p-8 flex flex-col justify-between" style="background: linear-gradient(160deg, {{config.brandColor.primary}} 0%, #15803d 100%);">
+        <div>
+          <p class="text-xs font-semibold tracking-widest uppercase mb-4" style="color: rgba(255,255,255,0.7); font-family: {{config.font.textFont}}, sans-serif;">The bottom line</p>
+          <h3 class="text-2xl font-black mb-3" style="color: white; font-family: {{config.font.headingFont}}, sans-serif;">Healthy habits that actually last</h3>
+          <p class="text-sm leading-relaxed" style="color: rgba(255,255,255,0.85); font-family: {{config.font.textFont}}, sans-serif;">
+            {{config.appName}} removes the friction between intention and action — turning a multi-hour weekly chore into a 2-minute review.
+          </p>
+        </div>
+        <div class="mt-6 pt-4" style="border-top: 1px solid rgba(255,255,255,0.2);">
+          <p class="text-sm font-bold" style="color: white; font-family: {{config.font.headingFont}}, sans-serif;">{{config.tagline}}</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
