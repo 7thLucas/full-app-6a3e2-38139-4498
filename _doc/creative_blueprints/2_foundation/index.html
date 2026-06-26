@@ -1,0 +1,83 @@
+<style>
+  .mode-landscape .sl-layout { flex-direction: row; gap: 2.5rem; }
+  .mode-portrait .sl-layout { flex-direction: column; gap: 1.5rem; }
+  .mode-landscape .sl-panel { width: 50%; }
+  .mode-portrait .sl-panel { width: 100%; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-12">
+
+    <!-- Header -->
+    <div class="mb-8">
+      <span class="text-xs font-semibold tracking-widest uppercase" style="color: {{config.brandColor.mutedForeground}}; font-family: {{config.font.textFont}}, sans-serif;">The Case for {{config.appName}}</span>
+      <h2 class="text-4xl font-black mt-1" style="font-family: {{config.font.headingFont}}, sans-serif; color: {{config.brandColor.foreground}};">Why healthy eating keeps failing</h2>
+    </div>
+
+    <!-- Two panels -->
+    <div class="sl-layout flex flex-1">
+
+      <!-- Problem -->
+      <div class="sl-panel rounded-2xl p-8 flex flex-col justify-between" style="background: {{config.brandColor.muted}}; border: 1px solid {{config.brandColor.border}};">
+        <div>
+          <div class="flex items-center gap-2 mb-5">
+            <span class="text-2xl">⚠️</span>
+            <span class="text-sm font-semibold tracking-wider uppercase" style="color: #DC2626; font-family: {{config.font.textFont}}, sans-serif;">The Problem</span>
+          </div>
+          <h3 class="text-2xl font-bold mb-4" style="font-family: {{config.font.headingFont}}, sans-serif; color: {{config.brandColor.foreground}};">Generic plans don't stick</h3>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-3">
+              <span class="mt-1 w-5 h-5 rounded-full flex-shrink-0 flex items-center justify-center text-xs font-bold" style="background: #FEE2E2; color: #DC2626;">✗</span>
+              <p class="text-sm" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.textFont}}, sans-serif;">One-size-fits-all plans ignore allergies, taste, and real-life schedules</p>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-1 w-5 h-5 rounded-full flex-shrink-0 flex items-center justify-center text-xs font-bold" style="background: #FEE2E2; color: #DC2626;">✗</span>
+              <p class="text-sm" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.textFont}}, sans-serif;">Tracking nutrition manually is tedious and unsustainable</p>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-1 w-5 h-5 rounded-full flex-shrink-0 flex items-center justify-center text-xs font-bold" style="background: #FEE2E2; color: #DC2626;">✗</span>
+              <p class="text-sm" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.textFont}}, sans-serif;">Weekly meal planning takes hours — time most people don't have</p>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-1 w-5 h-5 rounded-full flex-shrink-0 flex items-center justify-center text-xs font-bold" style="background: #FEE2E2; color: #DC2626;">✗</span>
+              <p class="text-sm" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.textFont}}, sans-serif;">Poor adherence leads to wasted groceries and abandoned health goals</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Solution -->
+      <div class="sl-panel rounded-2xl p-8 flex flex-col justify-between" style="background: linear-gradient(135deg, {{config.brandColor.primary}} 0%, #15803d 100%);">
+        <div>
+          <div class="flex items-center gap-2 mb-5">
+            <span class="text-2xl">✨</span>
+            <span class="text-sm font-semibold tracking-wider uppercase" style="color: rgba(255,255,255,0.8); font-family: {{config.font.textFont}}, sans-serif;">The Solution</span>
+          </div>
+          <h3 class="text-2xl font-bold mb-4" style="font-family: {{config.font.headingFont}}, sans-serif; color: white;">{{config.appName}} learns you</h3>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-3">
+              <span class="mt-1 w-5 h-5 rounded-full flex-shrink-0 flex items-center justify-center text-xs font-bold" style="background: rgba(255,255,255,0.25); color: white;">✓</span>
+              <p class="text-sm" style="color: rgba(255,255,255,0.9); font-family: {{config.font.textFont}}, sans-serif;">AI generates plans personalized to your goals, allergies, and available ingredients</p>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-1 w-5 h-5 rounded-full flex-shrink-0 flex items-center justify-center text-xs font-bold" style="background: rgba(255,255,255,0.25); color: white;">✓</span>
+              <p class="text-sm" style="color: rgba(255,255,255,0.9); font-family: {{config.font.textFont}}, sans-serif;">Smart shopping lists are auto-generated and organized — no duplicate purchases</p>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-1 w-5 h-5 rounded-full flex-shrink-0 flex items-center justify-center text-xs font-bold" style="background: rgba(255,255,255,0.25); color: white;">✓</span>
+              <p class="text-sm" style="color: rgba(255,255,255,0.9); font-family: {{config.font.textFont}}, sans-serif;">Nutrition tracked automatically — calories, macros, and micronutrients</p>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-1 w-5 h-5 rounded-full flex-shrink-0 flex items-center justify-center text-xs font-bold" style="background: rgba(255,255,255,0.25); color: white;">✓</span>
+              <p class="text-sm" style="color: rgba(255,255,255,0.9); font-family: {{config.font.textFont}}, sans-serif;">Recommendations improve with every meal — the more you use it, the better it gets</p>
+            </li>
+          </ul>
+        </div>
+        <div class="mt-6 pt-4" style="border-top: 1px solid rgba(255,255,255,0.2);">
+          <p class="text-sm font-semibold" style="color: rgba(255,255,255,0.7); font-family: {{config.font.textFont}}, sans-serif;">{{config.tagline}}</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
