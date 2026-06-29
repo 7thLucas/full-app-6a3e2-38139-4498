@@ -1,6 +1,6 @@
 import jwt from "jsonwebtoken";
 import * as cookie from "cookie";
-const parseCookies = cookie.parse;
+const parseCookies = cookie.parseCookie;
 import type { PublicUser } from "./authentication.types";
 import { UserRole } from "./authentication.types";
 
