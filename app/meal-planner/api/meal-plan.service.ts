@@ -1,3 +1,4 @@
+import { createHash } from "node:crypto";
 import axios from "axios";
 import { MealPlanModel } from "./meal-plan.model";
 import { UserPreferencesModel } from "./user-preferences.model";
@@ -10,16 +11,34 @@ function agentic_authHeaders(): Record<string, string> {
   return auth ? { Authentication: auth } : {};
 }
 
+function llmIdempotencyKey(ks: string, message: string, schema: string, systemPrompt: string): string {
+  return createHash("sha256")
+    .update(ks)
+    .update("\x00")
+    .update(message)
+    .update("\x00")
+    .update(schema)
+    .update("\x00")
+    .update(systemPrompt)
+    .digest("hex")
+    .slice(0, 32);
+}
+
 async function callLLM(message: string, schema: object, systemPrompt?: string): Promise<unknown> {
   const ks = process.env._KEYSPACE ?? "";
+  const schemaStr = JSON.stringify(schema);
+  const systemPromptStr = systemPrompt ?? "";
   const form = new FormData();
   form.set("message", message);
-  form.set("schema", JSON.stringify(schema));
-  if (systemPrompt) form.set("system_prompt", systemPrompt);
+  form.set("schema", schemaStr);
+  if (systemPromptStr) form.set("system_prompt", systemPromptStr);
+
+  const idempotencyKey = llmIdempotencyKey(ks, message, schemaStr, systemPromptStr);
 
   const response = await axios.post(`${AGENTIC_SERVICE_URL}/api/llm`, form, {
     headers: {
       "x-id-keyspace": ks,
+      "idempotency-key": idempotencyKey,
       ...agentic_authHeaders(),
     },
     timeout: 90_000,
